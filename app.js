@@ -15,6 +15,11 @@ const printProfileData = (profileDataArr) => {
 };
 
 printProfileData(profileDataArgs);
+const printProfileData = profileDataArr => {
+    for (let i = 0; i < profileDataArr.length; i++){
+        
+    }
+}
 
 
 //most recent code from before
