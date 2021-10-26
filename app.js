@@ -1,5 +1,8 @@
 
 
+
+
+
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 console.log(profileDataArgs);
 
@@ -31,9 +34,13 @@ const generatePage = (Melvin, melwel74) => {
 
 
 
+
 //cleaner loops
 profileDataArr.forEach(profileItem => console.log(profileItem));
     
+
+
+
 
 
 
