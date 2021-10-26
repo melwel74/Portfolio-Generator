@@ -1,45 +1,40 @@
 
-//comments
-//var message ='Hello Node!';
-//var sum = 5 + 3;
-//console.log(message);
-//console.log(sum);
-
-//var commandLineArgs = process.argv;
-//console.log(commandLineArgs);
-//var profileDataArgs = process.argv.slice(2, process.argv.length);
-//console.log(profileDataArgs);
 
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 console.log(profileDataArgs);
-const printProfileData = (profileDataArr) => {
-    console.log(profileDataArr);
-};
 
-const name = profileDataArgs [0];
-const github = profileDataArgs[1];
 
-const generatePage = () => 'Name: Jane, Github: janehub';
-console.log(generatePage(name, github));
-console.log(generatePage('Jane', 'janehub'));
+// const name = profileDataArgs[0];
+// const github = profileDataArgs[1];
+const [Melvin, melwel74] = profileDataArgs;
+console.log(Melvin, melwel74);
+console.log(generatePage(Melvin, melwel74));
 
-const generatePage = (userName, githubName) => {
+// const printProfileData = (profileDataArr) => {
+//     console.log(profileDataArr);
+// };
+
+// const name = profileDataArgs[0];
+// const github = profileDataArgs[1];
+//comment out everything above
+
+const generatePage = (Melvin, melwel74) => `Name: ${Melvin}, Github: ${melwel74}`;
+// console.log(generatePage(Melvin, melwel74));
+console.log(generatePage('Melvin', 'melwel74'));
+
+const generatePage = (Melvin, melwel74) => {
     return `
-    Name: ${userName}
-    GitHub: ${githubName}
+    Name: ${Melvin}, 
+    GitHub: ${melwel74}
     `;
 };
 
-//printProfileData(profileDataArgs);
-//const printProfileData = profileDataArr => {
-   // for (let i = 0; i < profileDataArr.length; i+= 1){
-       // console.log(profileDataArr [i]);
 
-    //}
-   // console.log('===');
 
-//}
+//cleaner loops
+profileDataArr.forEach(profileItem => console.log(profileItem));
+    
 
-//profileDataArr.forEach(profileItem => console.log(profileItem));
+
 
 
