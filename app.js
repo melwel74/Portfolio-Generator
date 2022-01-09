@@ -55,7 +55,7 @@
 // console.log(sum);
 
 var commandLineArgs = process.argv;
-console.log(commandLineArgs);
+console.log(commandLineArgs);  
 console.log(process);
 
 var profileDataArgs = process.argv.slice(2, process.argv.length);
